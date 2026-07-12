@@ -91,6 +91,28 @@ The custom Nginx webpage was also reachable remotely through Tailscale.
 
 No passwords, authentication keys, private IP addresses, Tailscale IP addresses, email addresses, or service tags are included in this repository.
 
+## Evidence
+
+### Proxmox snapshot
+
+![Proxmox snapshot list](01-proxmox-snapshot-list.png)
+
+### Ubuntu virtual machine details
+
+![Ubuntu system information](02-ubuntu-system-info.png)
+
+### Custom Nginx webpage
+
+![Custom Nginx webpage](03-nginx-custom-page.png)
+
+### Snapshot configuration
+
+![Proxmox snapshot details](04-proxmox-snapshot-details.png)
+
+### Services active after reboot
+
+![Tailscale, SSH, and Nginx active](05-services-active.png)
+
 ## Result
 
 Successfully built and validated a remotely managed Ubuntu Server VM running on Proxmox with working SSH, Tailscale, and Nginx services.
