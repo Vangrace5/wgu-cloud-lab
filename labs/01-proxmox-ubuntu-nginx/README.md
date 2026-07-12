@@ -94,6 +94,3 @@ No passwords, authentication keys, private IP addresses, Tailscale IP addresses,
 ## Result
 
 Successfully built and validated a remotely managed Ubuntu Server VM running on Proxmox with working SSH, Tailscale, and Nginx services.
-
-```text
-Add detailed documentation for Lab 01
