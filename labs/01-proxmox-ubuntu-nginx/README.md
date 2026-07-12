@@ -62,37 +62,38 @@ After the change, the Proxmox installer detected the SSD correctly.
 
 The following services were confirmed active after reboot:
 
-```bash
-systemctl is-active tailscaled ssh nginx
-Expected result:
+- `tailscaled`
+- `ssh`
+- `nginx`
 
-active
-active
-active
+The command used was:
+
+`systemctl is-active tailscaled ssh nginx`
+
+All three services returned `active`.
 
 The custom Nginx webpage was also reachable remotely through Tailscale.
 
-Skills Demonstrated
-Bare-metal hypervisor deployment
-Virtual machine provisioning
-Linux server administration
-BIOS and storage-controller troubleshooting
-SSH administration
-Secure remote access
-Web server deployment
-Linux service management
-Snapshot creation
-Startup and reboot validation
-Security Notes
+## Skills Demonstrated
+
+- Bare-metal hypervisor deployment
+- Virtual machine provisioning
+- Linux server administration
+- BIOS and storage-controller troubleshooting
+- SSH administration
+- Secure remote access
+- Web server deployment
+- Linux service management
+- Snapshot creation
+- Startup and reboot validation
+
+## Security Notes
 
 No passwords, authentication keys, private IP addresses, Tailscale IP addresses, email addresses, or service tags are included in this repository.
 
-Result
+## Result
 
 Successfully built and validated a remotely managed Ubuntu Server VM running on Proxmox with working SSH, Tailscale, and Nginx services.
-
-
-Commit message:
 
 ```text
 Add detailed documentation for Lab 01
