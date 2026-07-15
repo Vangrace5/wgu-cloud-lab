@@ -253,7 +253,11 @@ This repository does not publish:
 The screenshot below shows the Compose-managed Nginx container running successfully with Ubuntu port `8082` mapped to container port `80`.
 
 ![Docker Compose service running](01-compose-service-running.png)
+### Custom webpage running
 
+The screenshot below shows the custom Nginx webpage successfully served by the Docker Compose application.
+
+![Custom Docker webpage running](02-custom-webpage-running.png)
 ## Result
 
 Successfully installed Docker, ran official and custom Nginx containers, built a reusable custom image, deployed the application with Docker Compose, and verified that the containerized application recovered automatically after reboot.
