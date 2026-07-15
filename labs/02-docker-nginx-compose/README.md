@@ -246,6 +246,13 @@ This repository does not publish:
 - email addresses;
 - service tags;
 - private network details.
+## Evidence
+
+### Docker Compose service running
+
+The screenshot below shows the Compose-managed Nginx container running successfully with Ubuntu port `8082` mapped to container port `80`.
+
+![Docker Compose service running](01-compose-service-running.png)
 
 ## Result
 
