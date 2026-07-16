@@ -262,7 +262,13 @@ Organizations should:
 - include backups in retention planning.
 
 Persistence does not mean data should be kept forever.
+## Evidence
 
+### Replacement container running after reboot
+
+The screenshot below shows the replacement Nginx container running after Ubuntu rebooted, with host port `8083` mapped to container port `80`.
+
+![Lab 03 replacement container running](01-volume-container-running.png)
 ## Result
 
 Successfully created a Docker named volume, stored custom Nginx content inside it, removed the original container, connected a replacement container to the same volume, and verified that the data survived. The container and webpage also recovered successfully after Ubuntu rebooted.
