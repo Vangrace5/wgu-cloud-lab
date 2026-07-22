@@ -301,6 +301,12 @@ The screenshot below confirms that the replacement container uses a bind mount f
 
 ![Lab 04 bind mount verification](01-bind-mount-verification.png)
 
+### Live bind-mounted webpage
+
+The screenshot below shows the webpage being served from the Ubuntu host folder through the replacement Nginx container.
+
+![Lab 04 live bind-mounted webpage](02-live-bind-mounted-webpage.png)
+
 ## Result
 
 Successfully mounted a normal Ubuntu folder into an Nginx container, changed the webpage live, blocked container writes, removed the original container, created a replacement container, and restored the same webpage from the original host folder.
