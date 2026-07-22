@@ -293,6 +293,14 @@ Long commands wrapped across multiple terminal lines because the screen was spli
 - Least-privilege security
 - Troubleshooting command syntax
 
+## Evidence
+
+### Bind mount and restart-policy verification
+
+The screenshot below confirms that the replacement container uses a bind mount from the Ubuntu host folder, mounts it read-only inside Nginx, and uses the `unless-stopped` restart policy.
+
+![Lab 04 bind mount verification](01-bind-mount-verification.png)
+
 ## Result
 
 Successfully mounted a normal Ubuntu folder into an Nginx container, changed the webpage live, blocked container writes, removed the original container, created a replacement container, and restored the same webpage from the original host folder.
